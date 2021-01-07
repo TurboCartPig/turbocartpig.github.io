@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="The portfolio of Dennis Kristiansen" />
+
+		<title>Dennis Kristiansen</title>
+
+		<link rel="canonical" href="https://denniskristiansen.com" />
+
+		<!-- Font Awesome 5.15.1 | Solid + Brands -->
+		<!-- Attempt to load these stylesheets asynchronously if the browser supports it -->
+		<link
+			rel="preload"
+			href="font-awesome/css/fontawesome.min.css"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+		/>
+		<link
+			rel="preload"
+			href="font-awesome/css/solid.min.css"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+		/>
+		<link
+			rel="preload"
+			href="font-awesome/css/brands.min.css"
+			as="style"
+			onload="this.onload=null;this.rel='stylesheet'"
+		/>
+		<!-- Fall back on normal stylesheets -->
+		<noscript>
+			<link rel="stylesheet" href="font-awesome/css/fontawesome.min.css" />
+			<link rel="stylesheet" href="font-awesome/css/solid.min.css" />
+			<link rel="stylesheet" href="font-awesome/css/brands.min.css" />
+		</noscript>
+
+		<!-- Define the layout and style of the page -->
+		<style type="text/css">
+			/* Strip all default padding */
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			/* Fill the entire screen */
+			html,
+			body,
+			main {
+				width: 100vw;
+				height: 100vh;
+			}
+
+			h1 {
+				font-size: 9rem;
+			}
+
+			h2 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.5rem;
+			}
+
+			a {
+				color: #fff !important;
+				padding: 6px;
+			}
+
+			a:hover {
+				color: #333 !important;
+			}
+
+			main {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-content: center;
+				color: #fff !important;
+				background-color: #4cc3d3 !important;
+				font-family: "Helvetica Neue", "Segoe UI";
+			}
+
+			.row {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+			}
+
+			.item {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1 class="item">Dennis Kristiansen</h1>
+			<h2 class="item">Hi! I'm Dennis!</h2>
+			<p class="item">
+				You might also know me as TurboCartPig on basically all the platforms.
+				Here are some links where you can get in touch with me!
+			</p>
+			<div class="row">
+				<a
+					rel="external"
+					href="https://github.com/turbocartpig"
+					aria-label="Link to my github"
+					><i class="fab fa-github fa-2x" aria-hidden="true" title="GitHub"></i
+				></a>
+				<a
+					rel="external"
+					href="mailto:d@denniskristiansen.com"
+					aria-label="Send me an email"
+					><i class="fas fa-at fa-2x" aria-hidden="true" title="Email"></i
+				></a>
+			</div>
+		</main>
+	</body>
+</html>
