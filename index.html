@@ -46,29 +46,22 @@
 
 			/* Fill the entire screen */
 			html,
-			body,
-			main {
+			body {
 				width: 100vw;
 				height: 100vh;
 			}
 
-			a {
-				color: #fff !important;
-				padding: 6px;
-			}
-
-			a:hover {
-				color: #333 !important;
-			}
-
-			main {
+			body {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-content: center;
-				color: #fff !important;
 				background-color: #4cc3d3 !important;
 				font-family: "Helvetica Neue", "Segoe UI", "Arial";
+			}
+
+			i:hover {
+				color: #333 !important;
 			}
 
 			.row {
@@ -80,6 +73,8 @@
 			.item {
 				padding: 10px;
 				text-align: center;
+				text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+				color: #fff !important;
 			}
 
 			@media (orientation: landscape) {
@@ -112,27 +107,29 @@
 		</style>
 	</head>
 	<body>
-		<main>
-			<h1 class="item">Dennis Kristiansen</h1>
-			<h2 class="item">Hi! I'm Dennis!</h2>
-			<p class="item">
-				You might also know me as TurboCartPig on basically all the platforms.
-				Here are some links where you can get in touch with me!
-			</p>
-			<div class="row">
-				<a
-					rel="author"
-					href="https://github.com/turbocartpig"
-					aria-label="Link to my github"
-					><i class="fab fa-github fa-2x" aria-hidden="true" title="GitHub"></i
-				></a>
-				<a
-					rel="author"
-					href="mailto:d@denniskristiansen.com"
-					aria-label="Send me an email"
-					><i class="fas fa-at fa-2x" aria-hidden="true" title="Email"></i
-				></a>
-			</div>
-		</main>
+		<h1 class="item">Dennis Kristiansen</h1>
+		<h2 class="item">Hi! I'm Dennis!</h2>
+		<p class="item">
+			You might also know me as TurboCartPig on basically all the platforms.
+			Here are some links where you can get in touch with me!
+		</p>
+		<div class="row">
+			<a
+				rel="author"
+				href="https://github.com/turbocartpig"
+				aria-label="Link to my github"
+				><i
+					class="item fab fa-github fa-2x"
+					aria-hidden="true"
+					title="GitHub"
+				></i
+			></a>
+			<a
+				rel="author"
+				href="mailto:d@denniskristiansen.com"
+				aria-label="Send me an email"
+				><i class="item fas fa-at fa-2x" aria-hidden="true" title="Email"></i
+			></a>
+		</div>
 	</body>
 </html>
