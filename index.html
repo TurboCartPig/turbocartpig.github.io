@@ -52,18 +52,6 @@
 				height: 100vh;
 			}
 
-			h1 {
-				font-size: 9rem;
-			}
-
-			h2 {
-				font-size: 2rem;
-			}
-
-			p {
-				font-size: 1.5rem;
-			}
-
 			a {
 				color: #fff !important;
 				padding: 6px;
@@ -80,7 +68,7 @@
 				align-content: center;
 				color: #fff !important;
 				background-color: #4cc3d3 !important;
-				font-family: "Helvetica Neue", "Segoe UI";
+				font-family: "Helvetica Neue", "Segoe UI", "Arial";
 			}
 
 			.row {
@@ -90,7 +78,36 @@
 			}
 
 			.item {
+				padding: 10px;
 				text-align: center;
+			}
+
+			@media (orientation: landscape) {
+				h1 {
+					font-size: 16vh;
+				}
+
+				h2 {
+					font-size: 4vh;
+				}
+
+				p {
+					font-size: 2.5vh;
+				}
+			}
+
+			@media (orientation: portrait) {
+				h1 {
+					font-size: 16vw;
+				}
+
+				h2 {
+					font-size: 6vw;
+				}
+
+				p {
+					font-size: 4vw;
+				}
 			}
 		</style>
 	</head>
